@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ],
+      "route": "hero"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "heroPut",
+      "path": "heros/avengers/{id}.json",
+      "connection": "contactstutorial_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/hero-post/index.js"
+}
