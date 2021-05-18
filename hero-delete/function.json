@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "delete"
+      ],
+      "route": "hero/{id}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "heroDelete",
+      "path": "heros/avengers/{id}",
+      "connection": "contactstutorial_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/hero-delete/index.js"
+}
