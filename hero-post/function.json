@@ -6,7 +6,8 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "post"
+        "post", 
+        "put"
       ],
       "route": "hero"
     },
@@ -18,7 +19,7 @@
     {
       "type": "blob",
       "direction": "out",
-      "name": "heroPut",
+      "name": "heroPost",
       "path": "heros/avengers/{id}.json",
       "connection": "contactstutorial_STORAGE"
     }
