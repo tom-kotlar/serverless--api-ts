@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "hero-list"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "heroList",
+      "path": "heros/avengers",
+      "connection": "contactstutorial_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/hero-list/index.js"
+}
